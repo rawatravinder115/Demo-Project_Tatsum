@@ -13,13 +13,13 @@ public class User {
     @Column(name = "Name")
     private String name;
     @Column(name = "Connection")
-    private int Conn;
+    private int conn;
     @Column(name = "Relationship")
-    private int Rela;
+    private int rela;
     @Column(name = "Career")
-    private int Carr;
+    private int carr;
     @Column(name = "Wealth")
-    private int Wlt;
+    private int wlt;
 
 
     public Long getId() {
@@ -39,43 +39,43 @@ public class User {
     }
 
     public int getConn() {
-        return Conn;
+        return conn;
     }
 
     public void setConn(int conn) {
-        Conn = conn;
+        conn = conn;
     }
 
     public int getRela() {
-        return Rela;
+        return rela;
     }
 
     public void setRela(int rela) {
-        Rela = rela;
+        rela = rela;
     }
 
     public int getCarr() {
-        return Carr;
+        return carr;
     }
 
     public void setCarr(int carr) {
-        Carr = carr;
+        carr = carr;
     }
 
     public int getWlt() {
-        return Wlt;
+        return rela;
     }
 
     public void setWlt(int wlt) {
-        Wlt = wlt;
+        rela = wlt;
     }
 
     public User(String name, int conn, int rela, int carr, int wlt) {
         this.name = name;
-        Conn = conn;
-        Rela = rela;
-        Carr = carr;
-        Wlt = wlt;
+        conn = conn;
+        rela = rela;
+        carr = carr;
+        wlt = wlt;
     }
 
     public User() {
@@ -86,10 +86,10 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", name=" + name +
-                ", Conn=" + Conn +
-                ", Rela=" + Rela +
-                ", Carr=" + Carr +
-                ", Wlt=" + Wlt +
+                ", Conn=" + conn +
+                ", Rela=" + rela +
+                ", Carr=" + carr +
+                ", Wlt=" + wlt +
                 '}';
     }
 }
